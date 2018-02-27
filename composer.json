@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mgp25/instagram-php": "^2.0",
+        "symfony/console": "^3.2"
+    }
+}
