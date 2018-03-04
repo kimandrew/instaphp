@@ -2,3 +2,4 @@
 vendor
 vendor/*
 session/
+Constants.php

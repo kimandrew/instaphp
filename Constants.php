@@ -6,8 +6,8 @@ class Constants
 	public $truncatedDebug = false;
 
 	/* instagram */
-	const I_USERNAME = 'selfie39';
-	const I_PASS = 'HtcdesireS123';
+	const I_USERNAME = 'ideamojaysk';
+	const I_PASS = '18121812';
 
 	/* database */
 	const DB_HOST = 'localhost';

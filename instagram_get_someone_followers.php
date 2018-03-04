@@ -21,12 +21,12 @@ try {
     exit(0);
 }
 try {
-	$competitor = 'vivafitnesskld';
+	$competitor = 'love_story_decor';
     $maxId = null;
     do {
-		$userId = $ig->getUsernameId($competitor, $maxId);
-		$users = $ig->getUserFollowers($userId)->getFullResponse();
-		sleep(rand(1,3));
+		$userId = $ig->getUsernameId($competitor);
+		$users = $ig->getUserFollowers($userId, $maxId)->getFullResponse();
+		sleep(mt_rand(1,3));
 	} while($maxId !== null);
 	$array = [];
 	foreach ($users->users as $user) {
@@ -37,7 +37,7 @@ try {
 	$cursor = $db->connection();
 	$sql = $cursor->prepare("INSERT INTO competitor_followers (user, description, competitor) VALUES (?,?,?)");
 	$sql->bind_param('sss', $user, $descr, $competitor);
-	$competitor = 'figurka.kld';
+	$competitor = 'love_story_decor';
 	foreach ($array as $key=>$value) {
 		$user = $key;
 		$descr = $value;
